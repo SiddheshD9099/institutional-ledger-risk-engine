@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ledger Dashboard</title>
+    <style>
+        body { font-family: Arial; margin:40px; }
+        .card { padding:20px; border:1px solid #ccc; margin-bottom:20px;}
+    </style>
+</head>
+
+<body>
+
+<h1>Institutional Ledger Dashboard</h1>
+
+<div class="card">
+    <h3>Total Transactions</h3>
+    <p th:text="${transactions}"></p>
+</div>
+
+<div class="card">
+    <h3>Ledger Entries</h3>
+    <p th:text="${ledgerEntries}"></p>
+</div>
+
+<div class="card">
+    <h3>Total Money Transferred</h3>
+    <p th:text="${totalTransferred}"></p>
+</div>
+
+<div class="card">
+    <h3>Ledger Invariant</h3>
+    <p th:text="${invariant}"></p>
+</div>
+
+<div class="card">
+    <h3>Successful Transfers</h3>
+    <p th:text="${successfulTransfers}"></p>
+</div>
+
+<div class="card">
+    <h3>Failed Transfers</h3>
+    <p th:text="${failedTransfers}"></p>
+</div>
+
+</body>
+</html>
